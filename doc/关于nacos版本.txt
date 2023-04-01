@@ -1,0 +1,10 @@
+刚接触的话推荐nacos-1.0.0版本作为本地服务启动访问，较方便测试
+
+git clone https://github.com/alibaba/nacos.git
+
+mvn -Prelease-nacos -Dmaven.test.skip=true clean install -U
+
+ls -al distribution/target/
+
+然后进入该目录找到即可启动服务
+ distribution/target/nacos-server-$version/nacos/bin
